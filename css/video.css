@@ -548,3 +548,25 @@ footer {
     padding: 0px;
     border: 0px;
 }
+
+.regular-link{
+    border: 0px;
+    background-color: #fff;
+    color: #219ab3;
+    padding: 0px;
+    margin: 0px;
+}
+
+.regular-link:hover,
+.regular-link:focus,
+.regular-link:active {
+    text-decoration: none;
+    color: #11505d;
+    border: 0px;
+    cursor: pointer;
+}
+
+
+.center{
+    text-align: center;
+}

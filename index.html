@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Video Bootstrap | Youtube Capable Bootstrap Theme</title>
+    <title>abamath | super heroes of tomorrow</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -54,16 +54,10 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
+                        <a class="page-scroll" href="#classes">classes</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="#about">about</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#demo">demo</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#download">download</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#help">help</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">contact</a>
@@ -90,73 +84,16 @@
             <i class="fa fa-angle-double-down animated"></i>
         </a>
     </div>
-    
-    <!-- About Section -->
-    <section class="container content-section text-center full-screen" id="about">
-            <div class="col-lg-8 col-lg-offset-2 col-xs-10 col-xs-offset-1">
-                <h2>about</h2>
-                <p>We are a group of highly energetic software developers, college students, and engineers passionate about fostering the next generation of problem solvers to be the super heroes of tomorrow.</p>
-            </div>
-    </section>
 
 <!-- Demo Section-->
-  <section class="container content-section text-center full-screen" id="demo">
+  <section class="container content-section text-center full-screen" id="classes">
     <div class="col-lg-8 col-lg-offset-2 col-xs-10 col-xs-offset-1">
       <h2>
-        Demo
+        upcoming classes
       </h2>
       <p>
-        This theme allows you to use bootstrap modals for displaying youtube videos, and unlike default bootstrap, will stop the youtube video when the modal is closed. These videos can be triggered the same way as a bootstrap modal. Here are a few
-        examples of what it might look like.
+        This section will soon have a sortable/filterable list of classes for you to search to find classes in your area!
       </p>
-      
-      <p>
-        Using Buttons
-      </p>
-      <p>
-        <!-- Button trigger modal -->
-        <button class="btn btn-default btn-lg youtube-trigger" data-toggle="modal" data-target="#youtubeVideoModal" value="https://www.youtube.com/embed/2D2-o-KK02Y?autoplay=1&rel=0">
-          <i class="fa fa-play">
-          </i>
-          Watch a Video
-        </button>
-        
-        <!-- Button trigger modal -->
-        <button class="btn btn-default btn-lg youtube-trigger" data-toggle="modal" data-target="#youtubeVideoModal" value="https://www.youtube.com/embed/9D05ej8u-gU?autoplay=1&rel=0">
-          <i class="fa fa-play">
-          </i>
-          Watch Another Video
-        </button>
-      </p>
-    </br>
-    <p>
-      Using Images
-    </p>
-    <p>
-      <!-- Image trigger modal with no border -->
-      <div class="row col-xs-12">
-        <div class="col-sm-6 col-xs-12 image-link">
-          <button class="youtube-trigger" data-toggle="modal" data-target="#youtubeVideoModal" value="https://www.youtube.com/embed/9D05ej8u-gU?autoplay=1&rel=0">
-            <div class="carousel-caption">
-              <h3>
-                Watch a Video
-              </h3>
-            </div>
-            <img src="img/Background.jpg" class="img-responsive col-xs-12" alt="" />
-          </button>
-        </div>
-        <div class="col-sm-6 col-xs-12 image-link">
-          <button class="youtube-trigger" data-toggle="modal" data-target="#youtubeVideoModal" value="https://www.youtube.com/embed/9D05ej8u-gU?autoplay=1&rel=0">
-            <div class="carousel-caption">
-              <h3>
-                Watch Another Video
-              </h3>
-            </div>
-            <img src="img/Background.jpg" class="img-responsive col-xs-12" alt="" />
-          </button>
-        </div>
-    </div>
-  </p>
 
 
         <!-- Youtube Modal Where Everything is Displayed -->
@@ -168,43 +105,43 @@
         </div>
 
     </section>
-
-    <!-- Download Section -->
-    <section id="download" class="container content-section text-center full-screen">
-        <div class="col-lg-8 col-lg-offset-2 col-xs-10 col-xs-offset-1">
-            <h2>Download Video Bootstrap</h2>
-            <p>You can download Video Bootstrap for free on Github.</p>
-            <ul class="list-inline preview-links">
-                <li><a href="https://github.com/LukeSchlangen/video-bootstrap" class="btn btn-default btn-lg"><i class="fa fa-github"></i> On GitHub</a>
-                </li>
-            </ul>
-        </div>
-    </section>
     
     <!-- Help Section -->
-    <section id="help" class="container content-section full-screen">
+    <section id="about" class="container content-section full-screen">
         <div class="col-lg-8 col-lg-offset-2 col-xs-10 col-xs-offset-1">
             <div class="text-center">
-                <h2>Help</h2>
-                <p>There are a few questions I'll try to help with from the start.</p>
+                <h2>about / faq</h2>
+                <p>We are a group of highly energetic software developers, college students, and engineers passionate about fostering the next generation of problem solvers to be the super heroes of tomorrow.</p>
             </div>
-            <h3>How do I use the youtube videos I want?</h3>
-            <p>I moved all of the image links and video references out of the javascript and css and into the html for ease of use. You just need to change the youtube links to the videos you want, and you'll be all set. If you want some help figuring out the youtube api, <a href = "https://developers.google.com/youtube/youtube_player_demo">this is an incredible resource</a>.</p>
-            <h3>Why isn't it automatically playing on phones?</h3>
-            <p>Most modern browsers won't auto-start videos on mobile devices because you could eat up users' data on accident. Instead of leaving a picture of a youtube video, I just have the original background image stay put.</p>
-            <h3>Why does this mute all youtube videos?</h3>
-            <p>It's because of the way youtube works and what the YTPlayer (<a href="https://github.com/pupunzi/jquery.mb.YTPlayer/wiki">documentation here</a>) does in order to make it so that audio doesn't start playing right away. To change it, there is a part in the html that says "mute:true" and you can set that to "mute:false".</p>
-            <p>The problem is that the audio will now start playing right away, and there isn't an easy way for the user to turn it off (annoying). <b>The best way to solve this</b>, is to use a video from youtube that doesn't use audio (is silent) and then set "mute:false". Then you don't have to mute everything, and you don't have audio start right away.</p>
+            <h3>What do you do?</h3>
+            <p>We run robotics and coding classes through partnerships with community education programs in Minnesota. Here's a <button class="youtube-trigger regular-link" data-toggle="modal" data-target="#youtubeVideoModal" value="https://www.youtube.com/embed/0JSgVT5kgZI?autoplay=1&rel=0">video</button> of one of our robotics classes.</p>
+            <h3>I love working with kids and STEM! Can I help you?</h3>
+            <p>Probably! We're always looking to find new instructors and volunteers to help out! Tell us about yourself <a class="regular-link" data-toggle="modal" data-target="#myModal">here</a>!</p>
+
+            <!-- Modal -->
+            <div class="modal fade center" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                  </div>
+                  <iframe src="https://docs.google.com/forms/d/1mciSejbytHmriqCE5aczgyZG76mKaVLJmr-050K1jxo/viewform?embedded=true" width="550" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                </div>
+              </div>
+            </div>          
+            <h3>Why aren't you in my town yet?</h3>
+            <p>We had to start somewhere, we're from the southwest metro, so we started there, but we're currently expanding like crazy in Minnesota. If you want us in your town, <a class="page-scroll" href="#contact">get in touch</a> and let us know!</p>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="container content-section text-center full-screen">
         <div class="col-lg-8 col-lg-offset-2 col-xs-10 col-xs-offset-1">
-            <h2>Contact Video Bootstrap</h2>
-            <p>Feel free to email us to provide some feedback on this template or just to get in touch.</p>
-            <p><a href="mailto:videobootstrap@gmail.com">videobootstrap@gmail.com</a>
-            </p>
+            <h2>contact</h2>
+            <p>Want to bring Abamath to your school, find out what we're doing next, or just say hi?</p>
+            <p><a href="mailto:info@abamath.com">info@abamath.com</a></p>
+            <p><a href="tel:6127599153">612-759-9153</a></p>
         </div>
     </section>
 
