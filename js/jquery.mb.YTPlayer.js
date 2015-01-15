@@ -28,7 +28,7 @@ function onYouTubePlayerAPIReady() {
 
     ytp.YTAPIReady=true;
     jQuery(document).trigger("YTAPIReady");
-    }, 30000);
+    }, 3000);
 }
 
 (function (jQuery, ytp) {
