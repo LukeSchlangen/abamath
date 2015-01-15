@@ -23,11 +23,10 @@ var ytp = ytp || {};
 
 function onYouTubePlayerAPIReady() {
     if(ytp.YTAPIReady)
-        delay(10);
         return;
 
     ytp.YTAPIReady=true;
-    jQuery(document).trigger("YTAPIReady");
+    jQuery(document).delay(100).trigger("YTAPIReady");
 }
 
 (function (jQuery, ytp) {
