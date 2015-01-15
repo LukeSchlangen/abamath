@@ -22,8 +22,8 @@
 var ytp = ytp || {};
 
 function onYouTubePlayerAPIReady() {
-    delay( 6000 );
     if(ytp.YTAPIReady)
+        delay( 6000 );
         return;
 
     ytp.YTAPIReady=true;
