@@ -26,7 +26,7 @@ function onYouTubePlayerAPIReady() {
         return;
 
     ytp.YTAPIReady=true;
-    jQuery(document).trigger("YTAPIReady").delay(5000);
+    jQuery(document).trigger("YTAPIReady").delay(10000);
 }
 
 (function (jQuery, ytp) {
