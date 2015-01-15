@@ -22,13 +22,11 @@
 var ytp = ytp || {};
 
 function onYouTubePlayerAPIReady() {
-    setTimeout(function(){
     if(ytp.YTAPIReady)
         return;
 
     ytp.YTAPIReady=true;
     jQuery(document).trigger("YTAPIReady");
-    }, 5000);
 }
 
 (function (jQuery, ytp) {
@@ -103,7 +101,7 @@ function onYouTubePlayerAPIReady() {
             vol                    : 100, // 1 to 100
             addRaster              : false,
             opacity                : 1,
-            quality                : "default", //or “small”, “medium”, “large”, “hd720”, “hd1080”, “highres”
+            quality                : "small", //or "default", “small”, “medium”, “large”, “hd720”, “hd1080”, “highres”
             mute                   : false,
             loop                   : true,
             showControls           : true,
