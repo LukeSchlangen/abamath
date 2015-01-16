@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app>
 
 <head>
 
@@ -85,14 +85,58 @@
         </a>
     </div>
 
-<!-- Demo Section-->
+<!-- Upcoming Classes Section-->
   <section class="container content-section text-center full-screen" id="classes">
     <div class="col-lg-8 col-lg-offset-2 col-xs-10 col-xs-offset-1">
       <h2>
         upcoming classes
       </h2>
       <p>
-        This section will soon have a sortable/filterable list of classes for you to search to find classes in your area!
+        Start typing to search through our upcoming classes
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div ng-init="classes = [{name:'Competitive Computer Coding', district:'Hopkins', days:'Monday - Thursday', start:'6/15/2015', end:'6/18/2015', time:'9am - Noon', grades:'3rd - 6th Grade', description:'Love competition? Want to learn computer coding and programming? We will spend one week learning how to code our artificial intelligence programs to play games against other teams from across Minnesota. No experience required, just a passion to work hard and help Hopkins come out on top!'},{name:'Competitive Computer Coding', district:'Osseo', days:'Monday - Friday', start:'6/22/2015', end:'6/26/2015', time:'9am - Noon', grades:'3rd - 6th Grade', description:'Love competition? Want to learn computer coding and programming? We will spend one week learning how to code our artificial intelligence programs to play games against other teams from across Minnesota. No experience required, just a passion to work hard and help Osseo come out on top!'},{name:'Competitive Computer Coding', district:'Minnetonka', days:'Monday - Friday', start:'7/6/2015', end:'7/10/2015', time:'9am - Noon', grades:'3rd - 6th Grade', description:'Love competition? Want to learn computer coding and programming? We will spend one week learning how to code our artificial intelligence programs to play games against other teams from across Minnesota. No experience required, just a passion to work hard and help Minnetonka come out on top!'},{name:'Competitive Computer Coding', district:'Minnetonka', days:'Monday - Friday', start:'7/6/2015', end:'7/10/2015', time:'1pm - 4pm', grades:'3rd - 6th Grade', description:'Love competition? Want to learn computer coding and programming? We will spend one week learning how to code our artificial intelligence programs to play games against other teams from across Minnesota. No experience required, just a passion to work hard and help Minnetonka come out on top!'},{name:'Competitive Computer Coding', district:'Eden Prairie', days:'Monday - Thursday', start:'7/13/2015', end:'7/16/2015', time:'9am - Noon', grades:'3rd - 6th Grade', description:'Love competition? Want to learn computer coding and programming? We will spend one week learning how to code our artificial intelligence programs to play games against other teams from across Minnesota. No experience required, just a passion to work hard and help Eden Prairie come out on top!'},{name:'Competitive Computer Coding', district:'Forest Lake', days:'Monday - Friday', start:'7/20/2015', end:'7/24/2015', time:'9am - Noon', grades:'7th - 9th Grade', description:'Love competition? Want to learn computer coding and programming? We will spend one week learning how to code our artificial intelligence programs to play games against other teams from across Minnesota. No experience required, just a passion to work hard and help Forest Lake come out on top!'},{name:'Competitive Computer Coding', district:'White Bear Lake', days:'Monday - Friday', start:'7/20/2015', end:'7/24/2015', time:'1pm - 4pm', grades:'3rd - 6th Grade', description:'Love competition? Want to learn computer coding and programming? We will spend one week learning how to code our artificial intelligence programs to play games against other teams from across Minnesota. No experience required, just a passion to work hard and help White Bear Lake come out on top!'},{name:'Robotics Coding', district:'Minnetonka', days:'Monday - Friday', start:'8/10/2015', end:'8/14/2015', time:'9am - Noon', grades:'4th - 6th Grade', description:'If you are looking for a head start for FIRST Lego League this fall or just looking to try out robotics for yourself, this is the place to be. We will play games and solve problems from real FLL tournaments to learn everything you need to be ready for FLL!'},{name:'Robotics Coding', district:'Minnetonka', days:'Monday - Friday', start:'8/10/2015', end:'8/14/2015', time:'1pm - 4pm', grades:'4th - 6th Grade', description:'If you are looking for a head start for FIRST Lego League this fall or just looking to try out robotics for yourself, this is the place to be. We will play games and solve problems from real FLL tournaments to learn everything you need to be ready for FLL!'},{name:'Competitive Computer Coding', district:'Wayzata', days:'Monday - Friday', start:'6/15/2015', end:'6/19/2015', time:'9am - Noon', grades:'3rd - 6th Grade', description:'Love competition? Want to learn computer coding and programming? We will spend one week learning how to code our artificial intelligence programs to play games against other teams from across Minnesota. No experience required, just a passion to work hard and help Wayzata come out on top!'},{name:'Competitive Computer Coding', district:'Wayzata', days:'Monday - Friday', start:'6/15/2015', end:'6/19/2015', time:'1pm - 4pm', grades:'3rd - 6th Grade', description:'Love competition? Want to learn computer coding and programming? We will spend one week learning how to code our artificial intelligence programs to play games against other teams from across Minnesota. No experience required, just a passion to work hard and help Wayzata come out on top!'}]"></div>
+
+<input ng-model="searchText" class="form-control" type="text" placeholder="search">
+<table class="table" id="searchTextResults">
+  <tr><th>Name</th><th>District</th><th>Days</th><th>Start Date</th><th>End Date</th><th>Time</th><th>Grades</th></tr>
+  <tr ng-repeat="class in classes | filter:searchText">
+    <td>{{class.name}}</td>
+    <td>{{class.district}}</td>
+    <td>{{class.days}}</td>
+    <td>{{class.start}}</td>
+    <td>{{class.end}}</td>
+    <td>{{class.time}}</td>
+    <td>{{class.grades}}</td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </p>
 
 
@@ -146,7 +190,6 @@
         </div>
     </section>
 
-
     <!-- jQuery Version 1.11.0 -->
     <script src="js/jquery-1.11.0.js"></script>
 
@@ -161,6 +204,9 @@
 
     <!-- Youtube Video Player JavaScript -->
     <script src="js/jquery.mb.YTPlayer.js"></script>
+
+    <!-- Angular Javascript for list -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
 
 </body>
 
