@@ -522,6 +522,7 @@ footer {
 
 .full-screen{
     min-height: 100vh;
+    min-height: 200px;
     padding-top: 20vh;
 }
 
