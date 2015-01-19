@@ -62,6 +62,10 @@ function printDiv(divName) {
 $(document).ready(function () {
 
     $(".player").mb_YTPlayer();
+    //enable tooltip
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
 
 });
 
@@ -90,3 +94,5 @@ $(function() {
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+
