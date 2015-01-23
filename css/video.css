@@ -102,6 +102,10 @@ table {
     background-color: #fff;
 }
 
+nav img {
+    height: 24px;
+}
+
 .navbar-custom .navbar-brand {
     font-weight: 700;
 }
@@ -145,19 +149,21 @@ table {
 
 @media(min-width:767px) {
     .navbar {
-        padding: 20px 0;
+/*        padding: 20px 0;*/
         border-bottom: 0;
         letter-spacing: 1px;
         background-color: rgba(255,255,255,1);
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
-        background: -moz-linear-gradient(top,  rgba(255,255,255,0.75) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.75)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
-        background: -webkit-linear-gradient(top,  rgba(255,255,255,0.75) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
-        background: -o-linear-gradient(top,  rgba(255,255,255,0.75) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
-        background: -ms-linear-gradient(top,  rgba(255,255,255,0.75) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
-        background: linear-gradient(to bottom,  rgba(255,255,255,0.75) 0%,rgba(255,255,255,0) 100%); /* W3C */
+        background: rgba(255,255,255,0.75);
+
+/*        background: -moz-linear-gradient(top,  rgba(255,255,255,0.75) 0%, rgba(255,255,255,0) 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.75)), color-stop(100%,rgba(255,255,255,0)));
+        background: -webkit-linear-gradient(top,  rgba(255,255,255,0.75) 0%,rgba(255,255,255,0) 100%);
+        background: -o-linear-gradient(top,  rgba(255,255,255,0.75) 0%,rgba(255,255,255,0) 100%);
+        background: -ms-linear-gradient(top,  rgba(255,255,255,0.75) 0%,rgba(255,255,255,0) 100%);
+        background: linear-gradient(to bottom,  rgba(255,255,255,0.75) 0%,rgba(255,255,255,0) 100%);*/
         
     }
 
