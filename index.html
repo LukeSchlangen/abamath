@@ -110,15 +110,15 @@
 
 <input ng-model="searchText" class="form-control" type="text" placeholder="search">
 <table class="table" id="searchTextResults">
-<tr><th>Name</th><th>District</th><th>Days</th><th>Start Date</th><th>End Date</th><th>Time</th><th>Grades</th></tr>
+<tr><th>Name</th><th>District</th><th class="hidden-xs">Days</th><th>Start Date</th><th class="hidden-xs">End Date</th><th class="hidden-xs">Time</th><th class="hidden-xs">Grades</th></tr>
 <tr ng-repeat="class in classes | filter:searchText" type="button" class="regular-link" data-toggle="modal" data-target="#modal-{{$index}}">
     <td>{{class.name}}</td>
     <td>{{class.district}}</td>
-    <td>{{class.days}}</td>
+    <td class="hidden-xs">{{class.days}}</td>
     <td>{{class.start}}</td>
-    <td>{{class.end}}</td>
-    <td>{{class.time}}</td>
-    <td>{{class.grades}}</td>
+    <td class="hidden-xs">{{class.end}}</td>
+    <td class="hidden-xs">{{class.time}}</td>
+    <td class="hidden-xs">{{class.grades}}</td>
 </tr>
 </table>
 <!-- Modal -->
@@ -209,7 +209,7 @@
     <section id="contact" class="container content-section text-center full-screen">
         <div class="col-lg-8 col-lg-offset-2 col-xs-10 col-xs-offset-1">
             <h2>contact</h2>
-            <p>Want to bring Abamath to your school, find out what we're doing next, or just say hi?</p>
+            <p>Want to bring abamath to your school, find out what we're doing next, or just say hi?</p>
             <p><a href="mailto:info@abamath.com">info@abamath.com</a></p>
             <p><a href="tel:6127599153">612-759-9153</a></p>
         </div>
