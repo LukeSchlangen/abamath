@@ -92,23 +92,11 @@
         upcoming classes
       </h2>
       <p>
-        Start typing to search through our upcoming classes
-
-
-
-
-
-
-
-
-
-
-
 
 
 <div ng-init="classes = [{name:'Competitive Computer Coding', district:'Hopkins', days:'Monday - Thursday', start:'6/15/2015', end:'6/18/2015', time:'9am - Noon', grades:'3rd - 6th', description:'Love competition? Want to learn computer coding and programming? We will spend one week learning how to code our artificial intelligence programs to play games against other teams from across Minnesota. No experience required, just a passion to work hard and help Hopkins come out on top!'},{name:'Competitive Computer Coding', district:'Osseo', days:'Monday - Friday', start:'6/22/2015', end:'6/26/2015', time:'9am - Noon', grades:'3rd - 6th', description:'Love competition? Want to learn computer coding and programming? We will spend one week learning how to code our artificial intelligence programs to play games against other teams from across Minnesota. No experience required, just a passion to work hard and help Osseo come out on top!'},{name:'Competitive Computer Coding', district:'Minnetonka', days:'Monday - Friday', start:'7/6/2015', end:'7/10/2015', time:'9am - Noon', grades:'3rd - 6th', description:'Love competition? Want to learn computer coding and programming? We will spend one week learning how to code our artificial intelligence programs to play games against other teams from across Minnesota. No experience required, just a passion to work hard and help Minnetonka come out on top!'},{name:'Competitive Computer Coding', district:'Minnetonka', days:'Monday - Friday', start:'7/6/2015', end:'7/10/2015', time:'1pm - 4pm', grades:'3rd - 6th', description:'Love competition? Want to learn computer coding and programming? We will spend one week learning how to code our artificial intelligence programs to play games against other teams from across Minnesota. No experience required, just a passion to work hard and help Minnetonka come out on top!'},{name:'Competitive Computer Coding', district:'Eden Prairie', days:'Monday - Thursday', start:'7/13/2015', end:'7/16/2015', time:'9am - Noon', grades:'3rd - 6th', description:'Love competition? Want to learn computer coding and programming? We will spend one week learning how to code our artificial intelligence programs to play games against other teams from across Minnesota. No experience required, just a passion to work hard and help Eden Prairie come out on top!'},{name:'Competitive Computer Coding', district:'Forest Lake', days:'Monday - Friday', start:'7/20/2015', end:'7/24/2015', time:'9am - Noon', grades:'7th - 9th', description:'Love competition? Want to learn computer coding and programming? We will spend one week learning how to code our artificial intelligence programs to play games against other teams from across Minnesota. No experience required, just a passion to work hard and help Forest Lake come out on top!'},{name:'Competitive Computer Coding', district:'White Bear Lake', days:'Monday - Friday', start:'7/20/2015', end:'7/24/2015', time:'1pm - 4pm', grades:'3rd - 6th', description:'Love competition? Want to learn computer coding and programming? We will spend one week learning how to code our artificial intelligence programs to play games against other teams from across Minnesota. No experience required, just a passion to work hard and help White Bear Lake come out on top!'},{name:'Robotics Coding', district:'Minnetonka', days:'Monday - Friday', start:'8/10/2015', end:'8/14/2015', time:'9am - Noon', grades:'4th - 6th', description:'If you are looking for a head start for FIRST Lego League this fall or just looking to try out robotics for yourself, this is the place to be. We will play games and solve problems from real FLL tournaments to learn everything you need to be ready for FLL!'},{name:'Robotics Coding', district:'Minnetonka', days:'Monday - Friday', start:'8/10/2015', end:'8/14/2015', time:'1pm - 4pm', grades:'4th - 6th', description:'If you are looking for a head start for FIRST Lego League this fall or just looking to try out robotics for yourself, this is the place to be. We will play games and solve problems from real FLL tournaments to learn everything you need to be ready for FLL!'},{name:'Competitive Computer Coding', district:'Wayzata', days:'Monday - Friday', start:'6/15/2015', end:'6/19/2015', time:'9am - Noon', grades:'3rd - 6th', description:'Love competition? Want to learn computer coding and programming? We will spend one week learning how to code our artificial intelligence programs to play games against other teams from across Minnesota. No experience required, just a passion to work hard and help Wayzata come out on top!'},{name:'Competitive Computer Coding', district:'Wayzata', days:'Monday - Friday', start:'6/15/2015', end:'6/19/2015', time:'1pm - 4pm', grades:'3rd - 6th', description:'Love competition? Want to learn computer coding and programming? We will spend one week learning how to code our artificial intelligence programs to play games against other teams from across Minnesota. No experience required, just a passion to work hard and help Wayzata come out on top!'}]"></div>
 
-<input ng-model="searchText" class="form-control" type="text" placeholder="search">
+<input ng-model="searchText" class="form-control" type="text" placeholder="search" id="search">
 <table class="table" id="searchTextResults">
 <tr><th>Name</th><th>District</th><th class="hidden-xs">Days</th><th>Start Date</th><th class="hidden-xs">End Date</th><th class="hidden-xs">Time</th><th class="hidden-xs">Grades</th></tr>
 <tr ng-repeat="class in classes | filter:searchText" type="button" class="regular-link" data-toggle="modal" data-target="#modal-{{$index}}">
@@ -181,11 +169,11 @@
             <div class="text-center">
                 <h2>about / faq</h2>
             </div>
-            <h3 class="text-center">Who are you?</h3>
+            <h3>Who are you?</h3>
             <p>We are a group of highly energetic software developers, college students, and engineers passionate about fostering the next generation of problem solvers to be the super heroes of tomorrow.</p>
-            <h3 class="text-center">What do you do?</h3>
+            <h3>What do you do?</h3>
             <p>We run robotics and coding classes through partnerships with community education programs in Minnesota. Here's a <button class="youtube-trigger regular-link" data-toggle="modal" data-target="#youtubeVideoModal" value="https://www.youtube.com/embed/0JSgVT5kgZI?autoplay=1&rel=0">video</button> of one of our robotics classes.</p>
-            <h3 class="text-center">I love working with kids and STEM! Can I help you?</h3>
+            <h3>I love working with kids and STEM! Can I help you?</h3>
             <p>Probably! We're always looking to find new instructors and volunteers to help out! Tell us about yourself <a class="regular-link" data-toggle="modal" data-target="#myModal">here</a>!</p>
 
             <!-- Modal -->
@@ -200,7 +188,7 @@
                 </div>
               </div>
             </div>          
-            <h3 class="text-center">Why aren't you in my town yet?</h3>
+            <h3>Why aren't you in my town yet?</h3>
             <p>We had to start somewhere. We're from the southwest metro, so we started there. We're currently expanding like crazy in Minnesota. If you want us in your town, <a class="page-scroll" href="#contact">get in touch</a> and let us know!</p>
         </div>
     </section>
