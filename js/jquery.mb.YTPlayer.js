@@ -101,7 +101,7 @@ function onYouTubePlayerAPIReady() {
             vol                    : 100, // 1 to 100
             addRaster              : false,
             opacity                : 1,
-            quality                : "default", //or "default", “small”, “medium”, “large”, “hd720”, “hd1080”, “highres”
+            quality                : "small", //or "default", “small”, “medium”, “large”, “hd720”, “hd1080”, “highres”
             mute                   : false,
             loop                   : true,
             showControls           : true,
