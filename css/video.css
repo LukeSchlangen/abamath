@@ -33,13 +33,13 @@ p {
     line-height: 1.5;
 }
 
-@media(min-width:767px) {
+/*@media(min-width:767px) {
     p {
         margin: 0 0 35px;
         font-size: 20px;
         line-height: 1.6;
     }
-}
+}*/
 
 a {
     color: #219ab3;
@@ -530,9 +530,20 @@ footer {
     min-height: 100vh;
 }
 
-.video-section .buttonBar{
+.mobile-section{
+    bottom: 0px;
+    top: 0px;
+    height: 320px;
+    min-height: 100vh;
+}
+
+/*.mobile-section .buttonBar{
     display:none;
 }
+
+.video-section .buttonBar{
+    display:none;
+}*/
 
 .full-screen{
     min-height: 100vh;
@@ -554,7 +565,7 @@ footer {
 }
 
 .very-bottom {
-        text-align: center;
+    text-align: center;
     width: 100%;
     position: absolute;
     bottom: 1px;
