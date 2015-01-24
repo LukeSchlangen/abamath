@@ -182,7 +182,6 @@ nav img {
 .intro {
     display: table;
     width: 100%;
-    height: auto;
     padding: 100px 0;
     /*text-align: center;*/
     color: #000;
@@ -192,6 +191,10 @@ nav img {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    bottom: 0px;
+    top: 0px;
+    height: 320px;
+    min-height: 100vh;
 }
 
 .intro .intro-body {
@@ -543,13 +546,19 @@ footer {
 }
 
 .bottom{
+    text-align: center;
+    width: 100%;
     position: absolute;
     bottom: 70px;
+    left:0px;
 }
 
 .very-bottom {
+        text-align: center;
+    width: 100%;
     position: absolute;
     bottom: 1px;
+    left:0px;
 }
 
 .modal-body .youtube-modal{
