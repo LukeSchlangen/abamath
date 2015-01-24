@@ -184,7 +184,7 @@ nav img {
     width: 100%;
     height: auto;
     padding: 100px 0;
-    text-align: center;
+    /*text-align: center;*/
     color: #000;
     background-position: center;
     background-color: #fff;
@@ -521,7 +521,10 @@ footer {
 }
 
 .video-section{
-    height: 100vh;
+    bottom: 0px;
+    top: 0px;
+    height: 320px;
+    min-height: 100vh;
 }
 
 .video-section .buttonBar{
@@ -540,16 +543,13 @@ footer {
 }
 
 .bottom{
-    bottom: 12vh;
     position: absolute;
-    width: 100vw;
-    margin: 0px;
-    padding: 0px;
+    bottom: 70px;
 }
 
 .very-bottom {
-    bottom: 1px;
     position: absolute;
+    bottom: 1px;
 }
 
 .modal-body .youtube-modal{
