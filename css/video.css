@@ -537,13 +537,10 @@ footer {
     min-height: 100vh;
 }
 
-/*.mobile-section .buttonBar{
-    display:none;
-}
 
 .video-section .buttonBar{
     display:none;
-}*/
+}
 
 .full-screen{
     min-height: 100vh;
