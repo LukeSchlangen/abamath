@@ -180,7 +180,7 @@ nav img {
 }
 
 .intro {
-    display: table;
+    /*display: table;*/
     width: 100%;
     padding: 100px 0;
     /*text-align: center;*/
@@ -198,7 +198,7 @@ nav img {
 }
 
 .intro .intro-body {
-    display: table-cell;
+    /*display: table-cell;*/
     vertical-align: middle;
     color: #000;
 }
@@ -213,11 +213,11 @@ nav img {
 }
 
 
-    .intro {
+/*    .intro {
         height: 100%;
         padding: 0;
-    }
-@media(min-width:767px) {
+    }*/
+/*@media(min-width:767px) {
     .brand-heading {
         font-size: 12vh;
     }
@@ -225,7 +225,7 @@ nav img {
     .intro .intro-body .intro-text {
         font-size: 25px;
     }
-}
+}*/
 
 .btn-circle {
     /*width: 70px;*/
@@ -380,16 +380,16 @@ nav img {
     z-index: 2;
 }
 
-@media(min-width:767px) {
-    /*.content-section {*/
-    /*    padding-top: 250px;*/
-    /*}*/
+/*@media(min-width:767px) {
+    .content-section {
+        padding-top: 250px;
+    }
 
     .location-section {
         padding: 100px 0;
     }
 
-}
+}*/
 
 .btn {
     margin: 4px;
@@ -483,7 +483,7 @@ ul.banner-social-buttons {
     margin-top: 0;
 }
 
-@media(max-width:1199px) {
+/*@media(max-width:1199px) {
     ul.banner-social-buttons {
         margin-top: 15px;
     }
@@ -499,7 +499,7 @@ ul.banner-social-buttons {
     ul.banner-social-buttons li:last-child {
         margin-bottom: 0;
     }
-}
+}*/
 
 footer {
     padding: 50px 0;
